@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LeaFrice – Homemade Fresh Food</title>
+
+  <style>
+    :root {
+      --orange: #FF8C42;
+      --green: #7CB342;
+      --light-bg: #FFF7EE;
+      --dark: #333;
+    }
+
+    body {
+      margin: 0;
+      font-family: "Poppins", Arial, sans-serif;
+      background: var(--light-bg);
+      color: var(--dark);
+    }
+
+    /* HEADER */
+    header {
+      background: var(--orange);
+      padding: 20px;
+      text-align: center;
+      font-size: 32px;
+      color: white;
+      font-weight: 700;
+      box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+    }
+
+    /* HERO */
+    .hero {
+      text-align: center;
+      padding: 45px 20px;
+    }
+
+    .hero h1 {
+      font-size: 38px;
+      color: var(--green);
+      font-weight: 700;
+      margin-bottom: 10px;
+    }
+
+    .hero p {
+      max-width: 550px;
+      margin: auto;
+      font-size: 18px;
+      line-height: 1.5;
+      color: #444;
+    }
+
+    /* MAIN PRODUCT */
+    .main-product {
+      max-width: 750px;
+      margin: 40px auto;
+      background: white;
+      border-radius: 14px;
+      overflow: hidden;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+    }
+
+    .main-product img {
+      width: 100%;
+      display: block;
+    }
+
+    .main-content {
+      padding: 25px 30px;
+    }
+
+    .main-content h2 {
+      font-size: 28px;
+      color: var(--green);
+      font-weight: 700;
+      margin-bottom: 5px;
+    }
+
+    .price {
+      color: var(--orange);
+      font-size: 22px;
+      font-weight: bold;
+      margin-bottom: 12px;
+    }
+
+    .main-content p {
+      font-size: 16px;
+      line-height: 1.6;
+      color: #444;
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 18px;
+      padding: 14px 28px;
+      background: var(--green);
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 12px;
+      font-size: 18px;
+      transition: 0.25s;
+    }
+
+    .btn:hover {
+      background: #5C922B;
+      transform: translateY(-3px);
+    }
+
+    /* MENU GRID / KATALOG */
+    .menu-section {
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    .menu-section h2 {
+      font-size: 32px;
+      color: var(--green);
+      font-weight: 700;
+      margin-bottom: 20px;
+    }
+
+    .menu-grid {
+      max-width: 1000px;
+      margin: auto;
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+      gap: 20px;
+      padding: 10px;
+    }
+
+    .menu-card {
+      background: white;
+      border-radius: 14px;
+      overflow: hidden;
+      box-shadow: 0 6px 16px rgba(0,0,0,0.1);
+      transition: 0.3s;
+    }
+
+    .menu-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .menu-card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+
+    .menu-info {
+      padding: 15px;
+      text-align: left;
+    }
+
+    .menu-info h3 {
+      font-size: 20px;
+      color: var(--orange);
+      margin: 0;
+      font-weight: 700;
+    }
+
+    .menu-info p {
+      margin: 5px 0;
+      font-size: 14px;
+      color: #555;
+    }
+
+    .menu-price {
+      font-weight: bold;
+      color: var(--green);
+      margin-top: 5px;
+    }
+
+    /* ABOUT */
+    .about-section {
+      max-width: 800px;
+      margin: 50px auto;
+      background: var(--orange);
+      padding: 25px 30px;
+      border-radius: 14px;
+      text-align: center;
+      color: white;
+      box-shadow: 0 6px 16px rgba(0,0,0,0.1);
+    }
+
+    .about-section h3 {
+      font-size: 28px;
+      margin-bottom: 10px;
+    }
+
+    /* FOOTER */
+    footer {
+      margin-top: 50px;
+      padding: 20px;
+      background: var(--green);
+      text-align: center;
+      font-size: 16px;
+      color: white;
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  LeaFrice
+</header>
+
+<section class="hero">
+  <h1>Makanan Rumahan Fresh & Terjangkau</h1>
+  <p>LeaFrice menghadirkan makanan rumahan sederhana yang lezat, higienis, dan ramah kantong. Cocok untuk sarapan, makan siang, hingga makan malam.</p>
+</section>
+
+<!-- PRODUK UTAMA -->
+<div class="main-product">
+  <img src="produk.jpg" alt="Nasi Ayam Jeruk LeaFrice">
+
+  <div class="main-content">
+    <h2>Nasi Ayam Jeruk</h2>
+    <div class="price">Rp 10.000</div>
+    <p>
+      Nasi ayam dengan aroma daun jeruk harum dan rasa gurih khas,
+      disajikan hangat. Porsi pas, harga bersahabat—cocok untuk semua kalangan.
+    </p>
+
+    <a class="btn" href="https://wa.me/62895600136183" target="_blank">Pesan Sekarang via WhatsApp</a>
+  </div>
+</div>
+
+<!-- MENU LIST / KATALOG -->
+<section class="menu-section">
+  <h2>Katalog Menu LeaFrice</h2>
+
+  <div class="menu-grid">
+
+    <!-- MENU 1 -->
+    <div class="menu-card">
+      <img src="menu1.jpg" alt="Menu 1">
+      <div class="menu-info">
+        <h3>Nasi Ayam Jeruk</h3>
+        <p>Nasi gurih + ayam crunchy bumbu jeruk.</p>
+        <div class="menu-price">Rp 10.000</div>
+      </div>
+    </div>
+
+    <!-- MENU 2 -->
+    <div class="menu-card">
+      <img src="menu2.jpg" alt="Menu 2">
+      <div class="menu-info">
+        <h3>Nasi Ayam Geprek</h3>
+        <p>Ayam crispy sambal fresh pedas nikmat.</p>
+        <div class="menu-price">Rp 12.000</div>
+      </div>
+    </div>
+
+    <!-- MENU 3 -->
+    <div class="menu-card">
+      <img src="menu3.jpg" alt="Menu 3">
+      <div class="menu-info">
+        <h3>Nasi Telur Krispi</h3>
+        <p>Telur crispy gurih wangi bawang.</p>
+        <div class="menu-price">Rp 8.000</div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- TENTANG USAHA -->
+<div class="about-section">
+  <h3>Tentang LeaFrice</h3>
+  <p>
+    Kami adalah usaha rumahan yang menyediakan makanan enak, terjangkau, dan higienis untuk semua kalangan.
+    Dengan cita rasa rumahan dan bahan yang aman, kami ingin menjadi pilihan makan praktis setiap hari.
+  </p>
+</div>
+
+<footer>
+  © 2025 LeaFrice – Homemade Fresh & Affordable
+</footer>
+
+</body>
+</html>
